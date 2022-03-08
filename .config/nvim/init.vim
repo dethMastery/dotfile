@@ -32,11 +32,15 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 
+Plug 'vimsence/vimsence'
+
 Plug 'preservim/nerdtree'
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'akinsho/toggleterm.nvim'
+
+Plug 'grvcoelho/vim-javascript-snippets'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -51,3 +55,12 @@ nnoremap <F6> :sp<CR>:terminal<CR>
 nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <silent> <S-t> :tabnew<CR> 
+
+let g:vimsence_client_id = '942719157055655956'
+let g:vimsence_small_text = 'NeoVim'
+let g:vimsence_small_image = 'neovim'
+let g:vimsence_editing_details = 'Editing: {}'
+let g:vimsence_editing_state = 'Working on: {}'
+let g:vimsence_file_explorer_text = 'In NERDTree'
+let g:vimsence_file_explorer_details = 'Looking for files'
+let g:vimsence_custom_icons = {'filetype': 'iconname'}
